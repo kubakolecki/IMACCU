@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>15.0</VCProjectVersion>
+    <ProjectGuid>{AF1D1CA9-9E8F-4783-BBF6-243918F4D60A}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>IMACCU</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0.17763.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <AdditionalIncludeDirectories>D:\LIBC++\libtiff\include;D:\LIBC++\opencv\build\include;D:\LIBC++\Eigen 3.3.4;D:\LIBC++\fltk-1.3.4-2;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>D:\LIBC++\libtiff\lib;D:\LIBC++\opencv\build\x64\vc15\lib;D:\LIBC++\fltk-1.3.4-2\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>libtiff.lib;fltk.lib;fltkgl.lib;fltkimages.lib;fltkjpeg.lib;fltkzlib.lib;pencv_world341.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;odbccp32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>D:\LIBC++\curl-7.64.0-win64-mingw\include;D:\LIBC++\tiff-4.0.9_build\include;D:\LIBC++\opencv_346\build\include;D:\LIBC++\Eigen 3.3.7;D:\LIBC++\fltk-1.3.4-2;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>D:\LIBC++\curl-7.64.0-win64-mingw\lib;D:\LIBC++\tiff-4.0.9_build\libtiff\Release;D:\LIBC++\opencv_346\build\x64\vc15\lib;C:\Program Files (x86)\Windows Kits\10\Lib\10.0.16299.0\um\x64;D:\LIBC++\fltk-1.3.4-2\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>tiff.lib;fltk.lib;fltkgl.lib;fltkimages.lib;fltkforms.lib;fltkjpeg.lib;fltkzlib.lib;libcurl.dll.a;OpenGL32.Lib;opencv_world346.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;odbccp32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="Camera.h" />
+    <ClInclude Include="CameraSaveWindow.h" />
+    <ClInclude Include="ChessboardDeffineWindow.h" />
+    <ClInclude Include="ChessboardDetectWindow.h" />
+    <ClInclude Include="EoExportWindow.h" />
+    <ClInclude Include="EoImportWindow.h" />
+    <ClInclude Include="Graphics.h" />
+    <ClInclude Include="GraphicsWindow.h" />
+    <ClInclude Include="HelpWindow.h" />
+    <ClInclude Include="Image.h" />
+    <ClInclude Include="ImageCameraWindow.h" />
+    <ClInclude Include="ImagePoint.h" />
+    <ClInclude Include="ImagesImportWindow.h" />
+    <ClInclude Include="ImagesShowWindow.h" />
+    <ClInclude Include="ImPointImportWindow.h" />
+    <ClInclude Include="kFltk.h" />
+    <ClInclude Include="MainWindow.h" />
+    <ClInclude Include="OpenCVCalibWindow.h" />
+    <ClInclude Include="OrthoData.h" />
+    <ClInclude Include="pch.h" />
+    <ClInclude Include="photogrammetry.h" />
+    <ClInclude Include="PointDeleteWindow.h" />
+    <ClInclude Include="PointExpBATWindow.h" />
+    <ClInclude Include="PointImportWindow.h" />
+    <ClInclude Include="PointLabelWindow.h" />
+    <ClInclude Include="PointRenameWindow.h" />
+    <ClInclude Include="ProjectEditWindow.h" />
+    <ClInclude Include="ProjectNewWindow.h" />
+    <ClInclude Include="ProjectOpenWindow.h" />
+    <ClInclude Include="RevDist.h" />
+    <ClInclude Include="SimplePoint.h" />
+    <ClInclude Include="StereoGlWindow.h" />
+    <ClInclude Include="StereoModeWindow.h" />
+    <ClInclude Include="targetver.h" />
+    <ClInclude Include="TerrainPoint.h" />
+    <ClInclude Include="TextureQuad.h" />
+    <ClInclude Include="WarningWindow.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Camera.cpp" />
+    <ClCompile Include="CameraSaveWindow.cpp" />
+    <ClCompile Include="ChessboardDeffineWindow.cpp" />
+    <ClCompile Include="ChessboardDetectWindow.cpp" />
+    <ClCompile Include="EoExportWindow.cpp" />
+    <ClCompile Include="EoImportWindow.cpp" />
+    <ClCompile Include="Graphics.cpp" />
+    <ClCompile Include="GraphicsWindow.cpp" />
+    <ClCompile Include="HelpWindow.cpp" />
+    <ClCompile Include="IMACCU.cpp" />
+    <ClCompile Include="Image.cpp" />
+    <ClCompile Include="ImageCameraWindow.cpp" />
+    <ClCompile Include="ImagePoint.cpp" />
+    <ClCompile Include="ImagesImportWindow.cpp" />
+    <ClCompile Include="ImagesShowWindow.cpp" />
+    <ClCompile Include="ImPointImportWindow.cpp" />
+    <ClCompile Include="kFltk.cpp" />
+    <ClCompile Include="MainWindow.cpp" />
+    <ClCompile Include="OpenCVCalibWindow.cpp" />
+    <ClCompile Include="pch.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="photogrammetry.cpp" />
+    <ClCompile Include="PointDeleteWindow.cpp" />
+    <ClCompile Include="PointExpBATWindow.cpp" />
+    <ClCompile Include="PointImportWindow.cpp" />
+    <ClCompile Include="PointLabelWindow.cpp" />
+    <ClCompile Include="PointRenameWindow.cpp" />
+    <ClCompile Include="ProjectEditWindow.cpp" />
+    <ClCompile Include="ProjectNewWindow.cpp" />
+    <ClCompile Include="ProjectOpenWindow.cpp" />
+    <ClCompile Include="RevDist.cpp" />
+    <ClCompile Include="StereoGlWindow.cpp" />
+    <ClCompile Include="StereoModeWindow.cpp" />
+    <ClCompile Include="TerrainPoint.cpp" />
+    <ClCompile Include="TextureQuad.cpp" />
+    <ClCompile Include="WarningWindow.cpp" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

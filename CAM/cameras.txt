@@ -1,0 +1,12 @@
+ Volume in drive D is Nowy
+ Volume Serial Number is 10C6-80A7
+
+ Directory of D:\DANE\Visual_Studio\C++\IMACCU\IMACCU\CAM
+
+02.09.2019  15:44    <DIR>          .
+02.09.2019  15:44    <DIR>          ..
+02.09.2019  15:58                 0 cameras.txt
+02.09.2019  15:43               265 Huawei_P20_not_calibrated.cam
+14.11.2014  17:29               288 Nikon_D5200_20mm_not_calibrated.cam
+               3 File(s)            553 bytes
+               2 Dir(s)  1ÿ561ÿ210ÿ634ÿ240 bytes free
