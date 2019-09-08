@@ -23,6 +23,11 @@ To compile IMACCU You need:
 - fltk-1.3.4-2 for GUI
 - opencv 3.4.6 for chessboard corner detection and camera calibration
 
+However older versions of Eigen and Opencv should also work (I haven't tested this).
+
 ## Compiling IMACCU
+
+I have developped the software in Windows. I haven't tested it under Linux.
+This repo contains the vcxproj which You can use to compile IMACCU under Visual Studio. First You need to have FLTK and Opencv Visual Studio versions.
 
 ## Using IMACCU
