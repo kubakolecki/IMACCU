@@ -35,9 +35,18 @@ This repo contains the vcxproj which You can use to compile IMACCU under Visual 
 1. Setup FLTK for Visual Studio
 Here is the article that will guid You through instalation of FLTK:
 https://bumpyroadtocode.com/2017/08/05/how-to-install-and-use-fltk-1-3-4-in-visual-studio-2017-complete-guide/
+I only did steps 1 and 2. I didn't copy the .lib and .h files to the Visual Studio file structure. Instead I set the proper directories in the project properties.
 
 2. Download and istall Opencv for Windows from https://opencv.org/releases/
 
 3. Download Eigen from http://eigen.tuxfamily.org/index.php?title=Main_Page. You don't have to install Eigen - it is the header olny library.
+
+4. Open IMACCU.vcxproj in Visual Studio. Open project settings and in Release x64 cofiguration go to the Configuration Properties -> C/C++ -> General and add Eigen, OpenCV and FLTK header locations to the Additional Include Directories.
+
+5. In project settings go to the Configuration Properties -> Liner -> General and add Your locations of .lib files for both OpenCV and FLTK
+
+6. Try to build the project.
+
+7. In order to run the app You will have the opencv dll file: opencv_world346.dll in the same location as the IMACCU.exe or You should include the opencv_world346.dll location to the PATH location.
 
 ## Using IMACCU
