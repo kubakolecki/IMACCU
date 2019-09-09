@@ -16,18 +16,28 @@ The software provides up to 4 viewports with zoom and pan options for visualizat
 
 <img src="https://user-images.githubusercontent.com/54469000/64493210-807e0c00-d27d-11e9-8b87-5f4d092e1a0b.jpg" width="600">
 
+The software code has been developped through many years before sharing it in GitHub so it involves different coding styles. Newest parts are coded using C++17.
+
 ## Dependencies
 
 To compile IMACCU You need:
 - Eigen 3.3.7 for some math
 - fltk-1.3.4-2 for GUI
-- opencv 3.4.6 for chessboard corner detection and camera calibration
+- Opencv 3.4.6 for chessboard corner detection and camera calibration
 
-However older versions of Eigen and Opencv should also work (I haven't tested this).
+However older versions of Eigen and Opencv should also work.
 
 ## Compiling IMACCU
 
 I have developped the software in Windows. I haven't tested it under Linux.
-This repo contains the vcxproj which You can use to compile IMACCU under Visual Studio. First You need to have FLTK and Opencv Visual Studio versions.
+This repo contains the vcxproj which You can use to compile IMACCU under Visual Studio. First You need to have FLTK and Opencv build for Visual Studio.
+
+1. Setup FLTK for Visual Studio
+Here is the article that will guid You through instalation of FLTK:
+https://bumpyroadtocode.com/2017/08/05/how-to-install-and-use-fltk-1-3-4-in-visual-studio-2017-complete-guide/
+
+2. Download and istall Opencv for Windows from https://opencv.org/releases/
+
+3. Download Eigen from http://eigen.tuxfamily.org/index.php?title=Main_Page. You don't have to install Eigen - it is the header olny library.
 
 ## Using IMACCU
