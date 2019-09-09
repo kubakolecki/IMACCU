@@ -58,8 +58,8 @@ StereoGlWindow::StereoGlWindow(int X,int Y,int W,int H,const char*L ): Fl_Gl_Win
 	ImageL = NULL; //Inicjalizacja wskaznikow do obrazow
 	ImageR = NULL;
 
-	TilesL = NULL;
-	TilesR = NULL;
+	//TilesL = NULL;
+	//TilesR = NULL;
 
 	LoadedL = false;
 	LoadedR = false;

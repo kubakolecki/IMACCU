@@ -6,7 +6,6 @@
 #include <FL/Fl_RGB_Image.H>
 #include <FL/Fl_JPEG_Image.H>
 #include <FL/Fl_Button.H>
-#include <tiffio.h>
 #include "PointLabelWindow.h"
 #include "PointRenameWindow.h"
 #include "StereoGlWindow.h"

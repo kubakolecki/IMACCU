@@ -2,8 +2,6 @@
 #include <FL/Fl.H>
 #include <FL/Fl_Gl_Window.H>
 #include <FL/gl.h>
-#include <tiffio.h>
-
 #include "OrthoData.h"
 #include "ImagePoint.h"
 #include "TerrainPoint.h"
@@ -66,8 +64,8 @@ public:
 	IplImage* ImageL; //Wskazniki do obrazow: prawego i lewego
 	IplImage* ImageR;
 
-	uint32** TilesL; //Tu beda alokowane tablice wskaznikow do tili
-	uint32** TilesR;
+	//uint32** TilesL; //Tu beda alokowane tablice wskaznikow do tili
+	//uint32** TilesR;
 
 	bool LoadedL; //Zaladowany obraz lewy
 	bool LoadedR; //Zaladowany obraz prawy

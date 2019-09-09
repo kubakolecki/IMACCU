@@ -145,7 +145,7 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
-      <AdditionalIncludeDirectories>D:\LIBC++\curl-7.64.0-win64-mingw\include;D:\LIBC++\tiff-4.0.9_build\include;D:\LIBC++\opencv_346\build\include;D:\LIBC++\Eigen 3.3.7;D:\LIBC++\fltk-1.3.4-2;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>D:\LIBC++\opencv_346\build\include;D:\LIBC++\Eigen 3.3.7;D:\LIBC++\fltk-1.3.4-2;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
       <LanguageStandard>stdcpp17</LanguageStandard>
     </ClCompile>
@@ -154,8 +154,8 @@
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
       <OptimizeReferences>true</OptimizeReferences>
       <GenerateDebugInformation>true</GenerateDebugInformation>
-      <AdditionalLibraryDirectories>D:\LIBC++\curl-7.64.0-win64-mingw\lib;D:\LIBC++\tiff-4.0.9_build\libtiff\Release;D:\LIBC++\opencv_346\build\x64\vc15\lib;C:\Program Files (x86)\Windows Kits\10\Lib\10.0.16299.0\um\x64;D:\LIBC++\fltk-1.3.4-2\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
-      <AdditionalDependencies>tiff.lib;fltk.lib;fltkgl.lib;fltkimages.lib;fltkforms.lib;fltkjpeg.lib;fltkzlib.lib;libcurl.dll.a;OpenGL32.Lib;opencv_world346.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;odbccp32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>D:\LIBC++\opencv_346\build\x64\vc15\lib;C:\Program Files (x86)\Windows Kits\10\Lib\10.0.16299.0\um\x64;D:\LIBC++\fltk-1.3.4-2\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>fltk.lib;fltkgl.lib;fltkimages.lib;fltkforms.lib;fltkjpeg.lib;fltkzlib.lib;OpenGL32.Lib;opencv_world346.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;odbccp32.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
