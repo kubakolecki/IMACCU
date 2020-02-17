@@ -65,7 +65,7 @@ void ProjectOpenWindow::cb_Button_Ok_i()
 			activateItem(((MainWindow*)win)->menu,"Project/Edit");
 			activateItem(((MainWindow*)win)->menu,"Images");
 			activateItem(((MainWindow*)win)->menu,"Points");
-			activateItem(((MainWindow*)win)->menu,"Solve");
+			activateItem(((MainWindow*)win)->menu,"Solve/Camera Calibration");
 			activateItem(((MainWindow*)win)->menu,"Settings");
 			activateItem(((MainWindow*)win)->menu,"Tools");
 			((MainWindow*)win)->redraw();

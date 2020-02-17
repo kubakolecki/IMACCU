@@ -201,8 +201,8 @@ void Camera::writeToFile(string & filename) const
 	S << std::scientific << setprecision(6) << p1 << " 1.0e-010\n";
 	S << std::scientific << setprecision(6) << p2 << " 1.0e-010\n";
 	S << "Y scaling:\n";
-	S << std::fixed << setprecision(3) << y_scaling << "0.0001\n";
+	S << std::fixed << setprecision(3) << y_scaling << " 0.0001\n";
 	S << "Skewness of axes:\n";
-	S << std::fixed << setprecision(3) << skewness << "0.0001\n";
+	S << std::fixed << setprecision(3) << skewness << " 0.0001\n";
 	S.close();
 }

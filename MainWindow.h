@@ -21,6 +21,7 @@
 #include "GraphicsWindow.h"
 #include "StereoModeWindow.h"
 #include "OpenCVCalibWindow.h"
+#include "Transf3DWindow.h"
 #include "ChessboardDetectWindow.h"
 #include "HelpWindow.h"
 #include <string>
@@ -48,6 +49,7 @@ public:
 	EoExportWindow *OknoExportuEO;
 	GraphicsWindow *OknoGrafiki;
 	OpenCVCalibWindow *OknoKalibOpenCV;
+	Transf3DWindow *OknoTransformacji3D;
 	StereoModeWindow * OknoUstawien3D;
 	ChessboardDetectWindow *OknoChessboardDetect;
 	HelpWindow *OknoPomocy;
@@ -113,6 +115,9 @@ private:
 
 	static void cb_MenuSolveOpenCVCalibration(Fl_Widget *w, void *v);
 	inline void cb_MenuSolveOpenCVCalibration_i();
+
+	static void cb_MenuSolve3DTransf(Fl_Widget *w, void *v);
+	inline void cb_MenuSolve3DTransf_i();
 
 	static void cb_MenuToolsChessboardDetect(Fl_Widget *w, void *v);
 	inline void cb_MenuToolsChessboardDetect_i();

@@ -27,12 +27,12 @@ MainWindow::MainWindow(int w, int h, const char* title):Fl_Window(w,h,title)
 		menu->add("Tools/Detect Chessboard Corners", NULL, cb_MenuToolsChessboardDetect, this);
 
 		menu->add("Solve/Camera Calibration", NULL, cb_MenuSolveOpenCVCalibration, this);
+		menu->add("Solve/3D Transform", NULL, cb_MenuSolve3DTransf, this);
 
 		menu->add("Settings/Graphics", NULL, cb_MenuSettingsGraphics,this);
 
 		menu->add("Settings/Stereo Mode", NULL, cb_MenuSettingsStereo,this);
 		menu->add("Help/About BUNDLAB",NULL,cb_MenuHelpAbout,this);
-		menu->add("Help/License",NULL,cb_MenuHelpLicense,this);
 
 
 		OknoNowyProjekt = new ProjectNewWindow(450,233,"New Project");
@@ -48,6 +48,7 @@ MainWindow::MainWindow(int w, int h, const char* title):Fl_Window(w,h,title)
 		OknoUsuwaniaPunktow = new PointDeleteWindow(400, 450,"Delete Points");
 		OknoExportuBAT = new PointExpBATWindow(400,450,"Export Image Points - BAT");
 		OknoKalibOpenCV = new OpenCVCalibWindow(700, 600, "Camera Calibration");
+		OknoTransformacji3D = new Transf3DWindow(420, 225, "3D Transform of Point Set");
 		OknoImportuEO = new EoImportWindow(360, 520,"Import EO");
 		OknoExportuEO = new EoExportWindow(400, 450,"Export EO");
 		OknoGrafiki = new GraphicsWindow(500, 450,"Graphics");
@@ -64,7 +65,7 @@ MainWindow::MainWindow(int w, int h, const char* title):Fl_Window(w,h,title)
 	deactivateItem(menu,"Images");
 	deactivateItem(menu,"Points");
 	deactivateItem(menu,"Settings");
-	deactivateItem(menu,"Solve");
+	deactivateItem(menu,"Solve/Camera Calibration");
 	deactivateItem(menu,"Tools");
 	OknoNowyProjekt->win = (void*)this; //Przekazanie swojego adresu do okienka tworzenia nowego projektu
 	OknoOtworzProjekt->win = (void*)this;
@@ -437,6 +438,16 @@ inline void MainWindow::cb_MenuSolveOpenCVCalibration_i()
 		
 		
 	}
+}
+
+void MainWindow::cb_MenuSolve3DTransf(Fl_Widget *w, void *v)
+{
+	((MainWindow*)v)->cb_MenuSolve3DTransf_i();
+}
+
+void MainWindow::cb_MenuSolve3DTransf_i()
+{
+	OknoTransformacji3D->show();
 }
 
 void MainWindow::cb_MenuToolsChessboardDetect(Fl_Widget * w, void * v)

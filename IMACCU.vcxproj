@@ -176,6 +176,7 @@
     <ClInclude Include="ImPointImportWindow.h" />
     <ClInclude Include="kFltk.h" />
     <ClInclude Include="MainWindow.h" />
+    <ClInclude Include="Model3D.h" />
     <ClInclude Include="OpenCVCalibWindow.h" />
     <ClInclude Include="OrthoData.h" />
     <ClInclude Include="pch.h" />
@@ -195,6 +196,8 @@
     <ClInclude Include="targetver.h" />
     <ClInclude Include="TerrainPoint.h" />
     <ClInclude Include="TextureQuad.h" />
+    <ClInclude Include="Transf3DData.h" />
+    <ClInclude Include="Transf3DWindow.h" />
     <ClInclude Include="WarningWindow.h" />
   </ItemGroup>
   <ItemGroup>
@@ -216,6 +219,7 @@
     <ClCompile Include="ImPointImportWindow.cpp" />
     <ClCompile Include="kFltk.cpp" />
     <ClCompile Include="MainWindow.cpp" />
+    <ClCompile Include="Model3d.cpp" />
     <ClCompile Include="OpenCVCalibWindow.cpp" />
     <ClCompile Include="pch.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
@@ -237,6 +241,8 @@
     <ClCompile Include="StereoModeWindow.cpp" />
     <ClCompile Include="TerrainPoint.cpp" />
     <ClCompile Include="TextureQuad.cpp" />
+    <ClCompile Include="Transf3DData.cpp" />
+    <ClCompile Include="Transf3DWindow.cpp" />
     <ClCompile Include="WarningWindow.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

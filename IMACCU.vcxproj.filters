@@ -126,6 +126,15 @@
     <ClInclude Include="OrthoData.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="Transf3DWindow.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Transf3DData.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Model3D.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="pch.cpp">
@@ -231,6 +240,15 @@
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="WarningWindow.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Transf3DWindow.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Transf3DData.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Model3d.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
